@@ -10,7 +10,7 @@ Projeto desenvolvido no programa 'Next Level Week' da Rockerseat, voltado para o
 
 ## **:memo:  __O QUE É ESTE PROJETO?**
 
-O projeto visa criar um marketplace em que conecte empresas interessadas em recolher resíduos que agridem a natureza a pessoas que buscam locais que aceitam o recolhimento deste resíduos. Os estabelecimentos podem ser cadastrados através de um site, em que há um formulário para preenchimento de um formulário. Este site conecta-se a um banco de dados através de uma API, que é consumida pelo aplicativo onde os usuários acessam os estabelecimentos participantes e quais resíduos estes aceitam.
+O projeto visa criar um marketplace que conecte empresas interessadas em recolher resíduos que agridem a natureza a pessoas que buscam locais que aceitam o recolhimento deste resíduos. Os estabelecimentos podem ser cadastrados através de um site, em que há um formulário para preenchimento e upload de uma foto. Este site conecta-se a um banco de dados através de uma API, que é consumida pelo aplicativo onde os usuários acessam os estabelecimentos participantes e quais resíduos estes aceitam.
 
 ## **:computer:  __TECNOLOGIAS**
 
