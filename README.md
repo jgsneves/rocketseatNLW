@@ -1,64 +1,44 @@
 <h1 align=center>
-<img src="https://user-images.githubusercontent.com/38081852/83580830-6f63e200-a513-11ea-9a27-0a109ec1e4d0.png" />
+<img src="https://raw.githubusercontent.com/jgsneves/rocketseatNWL/master/ecoleta_main_image.png" />
 </h1>
-
-<div align="center">
-
-![GitHub issues][github_issues_badge] ![GitHub][repository_license_badge] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
-  </a>
-
-</div>
 
 <h3 align="center">
 
-♻️ Ecoleta é um projeto **Open Source** desenvolvido na semana **Next Level Week (1.0)** da **[Rocketseat][rocketseat_site]** utilizando as tecnologias ***TypeScript, Node, React e React Native***.
+Projeto desenvolvido no programa 'Next Level Week' da Rockerseat, voltado para o aprendizado full-stack com ReactJS, React Native e NodeJS
 
 </h3>
 
-![Banner](https://user-images.githubusercontent.com/38081852/84095189-04178580-a9d5-11ea-9496-9ec6f6a282e5.png)
+## **:memo:  O QUE É ESTE PROJETO?**
 
-## **:rocket: OBJETIVO**
+O projeto visa criar um marketplace em que conecte empresas interessadas em recolher resíduos que agridem a natureza a pessoas que buscam locais que aceitam o recolhimento deste resíduos. Os estabelecimentos podem ser cadastrados através de um site, em que há um formulário para preenchimento de um formulário. Este site conecta-se a um banco de dados através de uma API, que é consumida pelo aplicativo onde os usuários acessam os estabelecimentos participantes e quais resíduos estes aceitam.
 
-O projeto tem como finalidade **estabelecer uma conexão** entre **empresas e/ou entidades que coletam resíduos** (orgânicos e inorgânicos) **às pessoas e/ou entidades que necessitam constantemente descartar esses resíduos**. Solucionando um grande problema recorrente que é o **descarte inadequado do lixo**, facilitando o processo de recliclagem e reutilização.
-
-<!-- 
-  ...
-  Local Reservado para o GIF do projeto rodando.
-  ...
--->
-
-## **:computer: TECNOLOGIAS**
+## **:computer:  TECNOLOGIAS**
 
 
-#### **Website** ([React][react] + [TypeScript][typescript])
+#### **Front-end do site:** [React][react] utilizando a tipagem do [TypeScript][typescript]
 
-  - **[React Router Dom][react_router_dom]**
   - **[React Icons][react_icons]**
+  - **[React Router Dom][react_router_dom]**
   - **[Axios][axios]**
-  - **[Leaflet][leaflet]**
   - **[React Leaflet][react_leaflet]**
   - **[React Dropzone][react_dropzone]**
 
 
-  \* Veja o arquivo <kbd>[package.json](./sources/website/package.json)</kbd>
+===================
 
-#### **Server** ([NodeJS][node] + [TypeScript][typescript])
+#### **Back-end:** Servidor em [NodeJS][node] utilizando a tipagem do [TypeScript][typescript]
 
   - **[Express][express]**
   - **[CORS][cors]**
   - **[KnexJS][knex]**
   - **[SQLite][sqlite3]**
-  - **[ts-node][tsnode]**
-  - **[dotENV][dotenv]**
   - **[Multer][multer]**
   - **[Celebrate][celebrate]**
   - **[Joi][joi]**
 
-  \* Veja o arquivo <kbd>[package.json](./sources/server/package.json)</kbd>
+===================
 
-#### **Mobile** ([React Native][react_native] + [TypeScript][typescript])
+#### **Mobile:** [React Native][react_native] utilizando a tipagem do [TypeScript][typescript]
 
   - **[Expo][expo]**
   - **[Expo Google Fonts][expo_google_fonts]**
@@ -70,198 +50,173 @@ O projeto tem como finalidade **estabelecer uma conexão** entre **empresas e/ou
   - **[Expo Location][expo_location]**
   - **[Expo Mail Composer][expo_mail_composer]**
 
-  \* Veja o arquivo <kbd>[package.json](./sources/mobile/package.json)</kbd>
 
-#### **Utilitários**
+## **:runner: Instruções Para Compilar e Executar a Aplicação:**
 
-- Protótipo: **[Figma](https://www.figma.com/)** &rarr; **<kbd>[Protótipo (Ecoleta)](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)</kbd>**
-- API: **[IBGE API][ibge_api]** &rarr; **<kbd>[API de UFs][ibge_api_ufs]</kbd>**, **<kbd>[API de Municípios][ibge_api_municipios]</kbd>** 
-- Maps: **[Leaflet][leaflet]**
-- Editor: **[Visual Studio Code][vscode]** &rarr; Extensions: **<kbd>[SQLite][vscode_sqlite_extension]</kbd>**
-- Markdown: **[StackEdit][stackedit]**, **<kbd>[Markdown Emoji][markdown_emoji]</kbd>**
-- Commit Conventional: **[Commitlint][commitlint]**
-- Teste de API: **[Insomnia][insomnia]**
-- Ícones: **[Feather Icons][feather_icons]**, **[Font Awesome][font_awesome]**
-- Fontes: **[Ubuntu][font_ubuntu]**, **[Roboto][font_roboto]**
+### Configs do Servidor:
 
-
-## **:wine_glass: COMO UTILIZAR**
-
-### Configurações Iniciais
-
-Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> instalado na sua máquina. 
-
-Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões <kbd>[asdf]</kbd> para facilitar o processo de mudança da versão do **Node**, quando for necessário.
-
-Você pode optar também por utilizar o **yarn** no lugar do **npm**. Você pode instalar clicando nesse <kbd>[link][yarn]</kbd>, ou através do <kbd>[asdf]</kbd>.
-
-Após ter o **Node** instalado, instale as dependências do **React e React Native (Expo)** de forma global, utilizando os comandos:
-
+1) Instancia o NPM dentro do diretório:
 ```sh
-# React:
-$ npm install create-react-app -g
-
-# Expo (React Native):
-$ npm install -g expo-cli 
+	npm init -y                     # -y faz com que o node não faça perguntas de versão
+```
+2) Instala o ExpressJS:
+```sh
+	npm install express                      # o Express é responsável pelas rotas da API
+```
+3) Define os tipos do express:
+```sh
+	npm install @types/express -D            #-D cria uma dependência de desenvolvimento
+```
+4) Para executar o servidor, precisa instalar o TS-NODE:
+```sh
+	npm install ts-node -D
+```
+5) Instalar o typescript>
+```sh
+	npm install typescript -D
+```
+6) Criar arquivo de configuração o typescript:
+```sh
+	npx tsc --init
+```
+7) Executar o ts-node passando o servidor como argumento:
+```sh
+	npx ts-node src/<nome>.ts
+```
+8) Para criar o atralho de run, instalar o ts-node-dev:
+```sh
+	npm install ts-node-dev -D
+```
+9) Acessar o package.json e mudar o scripts:
+```js
+	"scripts": {
+    		"<nome_do_comando_que_vc_quer>": "ts-node-dev src/<nome>.ts"
+  	},
+```
+10) Agora você tem o atalho:
+```sh
+	npm run <nome_do_comando_que_vc_quer>
+```
+11) Pacote para lidar com upload de imagens:
+```sh
+	npm install multer
+```
+12) Para fazer validação de formulário, usar o Celebrate:
+```sh
+	npm install celebrate
+```
+13) Para ter o intellisense do Joi:
+```sh
+	npm install @types/hapi__joi -D
 ```
 
-Você precisa renomear o arquivo `.env-example` para `.env` e inserir as informações que condizem com o seu **host**:
+### Config do Banco de Dados (sqlite):
 
+1) Instala o knex (serve para interfaciar o BD SQL em qualquer formato de IDE):
 ```sh
-$ mv .env-example .env
+	npm install knex
+```
+2) Instala o SQLite3 (pode ser qualquer outro, de acordo com documentação KNEX):
+```sh
+	npm install sqlite3
+```
+3) Fazer migration usando knex:
+```sh
+	npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 ```
 
-Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório (para o gerenciamento de commits), no diretório do **server**, no diretório do **website** e no diretório **mobile**. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
+### Config do Front-end (ReactJS):
 
-```sh
-$ npm install
 
-# ou
-$ yarn
+1) Cria o React App:
+```sh	
+	npx create-react-app <nome> --template=typescript
 ```
-
-Exemplos:
+2) instalar pacote de icones:
 ```sh
-# Instalando as dependências do commitlint:
-$ cd ./ecoleta
-$ npm install
-
-# Instalando as dependências do server:
-$ cd ./sources/server
-$ npm install
-
-# Instalando as dependências do website:
-$ cd ./sources/website
-$ npm install
-
-# Instalando as dependências do mobile:
-$ cd ./sources/mobile
-$ npm install
+	npm install react-icons
 ```
-
-Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[server](./sources/server/package.json)</kbd>, <kbd>[website](./sources/website/package.json)</kbd> e <kbd>[mobile](./sources/mobile/package.json)</kbd>.
-
-### Utilizando o Server
-
+3) Rotas no react:
 ```sh
-# Abrindo o terminal no diretório do servidor:
-$ cd ./sources/server
-
-# Executando a aplicação em modo de desenvolvimento:
-$ npm run dev
-
-# Instanciando o banco de dados:
-$ npm run knex:migrate
-
-# Povoando o banco de dados (seeds):
-$ npm run knex:seed
+	npm install react-router-dom
 ```
-
-> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](./sources/server/package.json)</kbd> para saber quais scripts estão disponíveis.
-
-### Utilizando o Website
-
+4) Pro typescript precisamos instalar a declaração de tipagem do router:
 ```sh
-# Abrindo o terminal no diretório do website:
-$ cd ./sources/website
-
-# Executando o website no modo de desenvolvimento:
-$ npm run start
+	npm install @types/react-router-dom -D
 ```
+5) API de maps (a do google não é 100% open source):
+```sh	
+	https://leafletjs.com/
+	https://react-leaflet.js.org/
 
-> Se o browser não abrir automaticamente, acesse: http://localhost:3000.
-
-### Utilizando o Mobile
+	npm install leaflet react-leaflet
+```
+6) Pro typescript precisamos instalar a declaração de tipagem do leaftlet
+```sh
+	npm install @types/react-leaftlet -D
+```
+7) Biblioteca pra fazer requisições à API axios
+```sh
+	npm install axios               #usar um arquivo TS para fazer os services
+```
+8) Para utilizar a caixa de upload de imagem:
+```sh
+	npm install react-dropzone
+```
+### Configs do Mobile (React Native):
 
 Instale o aplicativo <kbd>[Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en)</kbd> no seu smartphone.
 
+1) Instalar o expo CLI:
 ```sh
-# Abrindo o terminal no diretório do mobile:
-$ cd ./sources/mobile
-
-# Executando o mobile no modo de desenvolvimento:
-$ npm run start
+	npm install -g expo-cli
 ```
+Instalar o aplicativo Expo disponível na Play Store ou Apple Store, apontar para o QR Code renderizado no console da sua IDE ou conectar via IP. Lembrar de editar o endereço de ip dentro do servidor para o ip da sua máquina. Também utilizar o Expo na mesma rede que sua máquina (wifi).
 
-Agora, abra o aplicativo do expo e no modo **LAN** faça o scan do QRCode.
-
-> Se tiver algum problema para executar o aplicativo nesse modo, tente desabilitar o firewall da sua máquina.
-
-Se tiver algum problema com as fontes, utilize o comando:
+2) Instalar o expo google fonts:
 ```sh
-$ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
+	npm install expo-font @expo-google-fonts/{nome_da_fonte}
 ```
-
-**\* Lembre de inserir no arquivo `.env` o IP exato que foi gerado pelo seu mobile após utilizar o comando `npm run start`.**
-
-## **:octocat: COMO CONTRIBUIR**
-  
-  - Verifique as **[Issues](https://github.com/x0n4d0/ecoleta/projects/1)** que estão abertas e se já não existe alguma com a sua feature;
-  - Abra uma **Issue** com o nome e descrição da sua feature e assine com o seu usuário informando que irá fazê-la;
-  - Faça um **[fork](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo)** do repositório;
-  - Entre no sua página do GitHub e faça um **clone** do seu **fork**;
-  - Crie uma *branch* com o nome da sua feature: `git chechout -b feat/minhaFeature`;
-  - Faça as alterações necessárias no código ou na documentação;
-  - Instale as dependências do *commitlint* na raíz do projeto para a verificação dos commits: `npm install` ou `yarn`;
-  - Faça o *commit* das suas alterações seguindo as [convenções de commit](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/), adicione na descrição o id da sua Issue em parênteses e lembre de fechar a sua Issue com o id no rodapé do commit:
-
-  ```
-    <tipo>(escopo opcional): <descrição> (#x)
-
-    [corpo do commit]
-
-    Close #x
-  ```
-  Exemplo:
-  ```sh
-    feat: adicionado componente para tal coisa (#52)
-
-    Foi adicionado um componente para tal coisa com o objetivo de melhorar tal coisa, deixando o projeto de tal maneira.
-
-    Close #52
-  ```
-  - Faça um *push* para a sua *branch*: `git push origin feat/minhaFeature`;
-  - Agora é só abrir um *pull request* no repositório que você fez o *fork* e assim que acontecer o *merge* sua Issue será fechada e suas alterações irão fazer parte do projeto;
-  - Depois que o *merge* da sua pull request for feito, você pode deletar a sua *branch*.
-
-  \* **Obrigado por contribuir!** ❤️ :facepunch: :blush:
-
-## **:star2: AGRADECIMENTOS**
-
-<div align=center>
-
-<table style="width:100%">
-  <tr align=center>
-    <th><strong>Next Level Week</strong></th>
-    <th><strong>Rocketseat</strong></th>
-    <th><strong>diego3g</strong></th>
-    <th><strong>maykbrito</strong></th>
-  </tr>
-  <tr align=center>
-    <td>
-      <a href="https://nextlevelweek.com/">
-        <img width="200" src="https://user-images.githubusercontent.com/42815135/83976057-f0352c00-a8cd-11ea-88da-22ff672ce842.png">
-      </a>
-    </td>
-    <td>
-      <a href="https://rocketseat.com.br/">
-        <img width="200" height="180" src="https://user-images.githubusercontent.com/38081852/83981650-1e2e6680-a8f6-11ea-9f42-6df8fe809e4b.png">
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/diego3g">
-        <img width="200" height="180" src="https://user-images.githubusercontent.com/38081852/83981712-b7f61380-a8f6-11ea-9099-bd3677e97e39.jpg">
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/maykbrito">
-        <img width="200" height="180" src="https://user-images.githubusercontent.com/38081852/83981753-1de29b00-a8f7-11ea-93cf-23d2ff65fa5c.png">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</div>
+3) Instalar rota no app:
+```sh
+	npm install @react-navigation/native
+```
+4) Instalar pacotes gerais do react navigation:
+```sh
+	expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+5) Instalar o Stack Layout:
+```sh
+	npm install @react-navigation/stack
+```
+6) Instalar a extensão para permitir usar maps no React Native:
+```sh
+	npm install react-native-maps
+```
+7) Instalar o Expo Constants
+```sh
+	npm install expo-constants
+```
+8) Para ler SVG (imagens), precisamos instalar o pacote SVG:
+```sh
+	npm install react-native-svg
+```
+9) Instalar axios para requisições:
+```sh
+	npm install axios
+```
+10) Instalar o Expo Location para buscar a localização do user:
+```sh
+	npm install expo-location
+```
+11) Para utilizar uma tela de criação de email:
+```sh
+	npm install expo-mail-composer
+```
+12) Para fazer inputs com lista de seleção:
+```sh
+	npm install react-native-picker-select
+```
 
 ## **:books: REFERÊNCIAS**
 
@@ -277,15 +232,7 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 - [Celebrate](https://github.com/arb/celebrate)
 - [Joi](https://hapi.dev/module/joi/)
 
-## **:page_with_curl: LICENÇA**
 
-Esse repositório está licenciado pela **MIT LICENSE**. Para mais informações detalhadas, leia o arquivo [LICENSE](./LICENSE) contido nesse repositório. 
-
-<h2 align="center">Feito com ❤️ por <a href="https://www.linkedin.com/in/mauricioromagnoli/">Maurício Romagnoli</a></h2>
-
-<!-- Website Links -->
-
-[rocketseat_site]: https://rocketseat.com.br/
 
 <!-- Badges -->
 
