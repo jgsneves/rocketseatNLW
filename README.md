@@ -8,11 +8,11 @@ Projeto desenvolvido no programa 'Next Level Week' da Rockerseat, voltado para o
 
 </h3>
 
-## **:memo:  O QUE É ESTE PROJETO?**
+## **:memo:  __O QUE É ESTE PROJETO?**
 
 O projeto visa criar um marketplace em que conecte empresas interessadas em recolher resíduos que agridem a natureza a pessoas que buscam locais que aceitam o recolhimento deste resíduos. Os estabelecimentos podem ser cadastrados através de um site, em que há um formulário para preenchimento de um formulário. Este site conecta-se a um banco de dados através de uma API, que é consumida pelo aplicativo onde os usuários acessam os estabelecimentos participantes e quais resíduos estes aceitam.
 
-## **:computer:  TECNOLOGIAS**
+## **:computer:  __TECNOLOGIAS**
 
 
 #### **Front-end do site:** [React][react] utilizando a tipagem do [TypeScript][typescript]
@@ -51,7 +51,7 @@ O projeto visa criar um marketplace em que conecte empresas interessadas em reco
   - **[Expo Mail Composer][expo_mail_composer]**
 
 
-## **:runner: Instruções Para Compilar e Executar a Aplicação:**
+## **:runner: __Instruções Para Compilar e Executar a Aplicação:**
 
 ### Configs do Servidor:
 
@@ -218,7 +218,7 @@ Instalar o aplicativo Expo disponível na Play Store ou Apple Store, apontar par
 	npm install react-native-picker-select
 ```
 
-## **:books: REFERÊNCIAS**
+## **:books: __REFERÊNCIAS**
 
 - [React + TypeScript Cheat Sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 - [Blog Rocketseat](https://blog.rocketseat.com.br/)
